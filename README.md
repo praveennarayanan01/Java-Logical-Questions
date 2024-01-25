@@ -1,1 +1,1 @@
-# Java-Logical_Questions
+# Java-Logical-Questions
