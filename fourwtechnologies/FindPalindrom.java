@@ -1,3 +1,7 @@
+/*
+ * In this class i have wriiten code for how to check 
+ * given String is palindrom or not
+ */
 package fourwtechnologies;
 import java.util.Scanner;
 public class FindPalindrom {
