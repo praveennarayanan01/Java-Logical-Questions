@@ -7,16 +7,18 @@ import java.util.Arrays;
 
 public class ReplaceDuplicate {
   public static void main(String[]args){
-    int array[]={1,2,3,4,1,5,2,1};
+    int array[]={1,2,3,4,1,5,2,3};
+    System.out.println(Arrays.toString(array));
     replaceDuplicate(array);
+    System.out.println(Arrays.toString(array));
   }
   public static void replaceDuplicate(int[]a){
-    int j=1;
-    
-    for(int i=0;i<=a.length-2;i++){
-      for()
-    } for(int ch:a){
-        System.out.println(ch);
-    }
+    for(int i=0;i<=a.length-1;i++){ //length-1==7
+      for(int j=0;j<i;j++){
+        if(a[j]==a[i]){
+          a[i]=0;
+        }
+      }
+    } 
   }
 }
