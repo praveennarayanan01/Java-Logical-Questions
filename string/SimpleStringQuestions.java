@@ -30,17 +30,21 @@ public class SimpleStringQuestions {
       System.out.println(a);
     }
   }
-  /*This method will print how many upperCase in your String
+  /*This method will print how many upperCase and lowerCase in your String
    * we can change the return type to int if we needed
    */
   public static void countUppercase(String str){
-    int count=0;
+    int countU=0;
+    int countL=0;
     for(int i=0;i<str.length();i++){
       char a=str.charAt(i);
-      if(a<91)
-        count++;
+      if(a<91 && a>64)
+        countU++;
+      if(a>96 && a<122)
+        countL++;
     }
-    System.out.println(count);
+    System.out.println("upperCase -"+countU);
+    System.out.println("lowerCase-"+countL);
   }
   public static void main(String[]args){
     Scanner scanner=new Scanner(System.in);
